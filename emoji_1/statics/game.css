@@ -1,0 +1,114 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3vh;
+  box-sizing: border-box;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 10px;
+  background: lightblue;
+  border-radius: 28px;
+  font-family: Arial;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 8px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgb(76, 140, 151);
+  background-image: linear-gradient(to bottom, rgb(76, 140, 151), rgb(76, 140, 151));
+  text-decoration: none;
+}
+
+.btn+.btn {
+  margin-left: 10px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.wrap {
+  background-color: white;
+  padding: 44px;
+  border: 1px solid rgb(207, 204, 204);
+  border-radius: 10px;
+}
+
+.container {
+  background-color: white;
+  position: relative;
+  width: 320px;
+  height: 320px;
+  max-width: 500px;
+}
+
+.card-wrap {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 0.2s;
+  user-select: none;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  border: 1px solid rgb(100, 100, 100);
+  border-radius: 10px;
+  background-color: rgb(230, 219, 219);
+}
+
+.card span {
+  opacity: 0.5;
+  font-size: 24px;
+}
+
+.is-allow {
+  background-color: white;
+}
+
+.is-allow span {
+  opacity: 1;
+}
+
+.card-slot {
+  background-color: white;
+  z-index: -1;
+  position: absolute;
+  margin-top: 500px;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid rgb(204, 204, 204);
+  height: 40px;
+  width: 280px;
+  border-radius: 10px;
+}

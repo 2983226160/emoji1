@@ -1,0 +1,77 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+    /*无法选择图片*/
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+/*********************container*****************/
+#container {
+    width: 600px;
+    height: 400px;
+    background: url("/statics/images/bg_container.jpg");
+    border: 1px solid wheat;
+}
+
+#left-tab {
+    float: left;
+    height: 100%;
+    width: 100px;
+}
+
+#tab_time {
+    color: wheat;
+    width: 90%;
+    height: 30px;
+    background: rgba(0, 0, 0, .7);
+    border-radius: 5px;
+    margin: 10px 0 0 4px;
+}
+
+#re_button {
+    color: wheat;
+    width: 90%;
+    height: 30px;
+    background: rgba(0, 0, 0, .7);
+    border-radius: 5px;
+    border: 0;
+    margin: 10px 0 0 4px;
+    outline: none;
+}
+
+#re_button:active {
+    background: rgba(0, 0, 0, .5);
+}
+
+#tab_time p {
+    margin: 3px 0 0 5px;
+    position: fixed;
+}
+
+#right-con {
+    float: left;
+    height: 100%;
+    width: 500px;
+    margin-left: -1px;
+    border-left: 1px solid wheat;
+}
+
+#gameBox {
+    width: 350px;
+    height: 350px;
+    margin: 25px auto;
+    background: rgba(0, 0, 0, .7);
+}
+
+#gameBox .box {
+    width: 25px;
+    height: 25px;
+    float: left;
+    box-sizing: border-box;
+
+}

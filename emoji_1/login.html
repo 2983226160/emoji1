@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/login.css"> 
+  <title>Login</title>
+</head> 
+<body>
+  <div class= "login-container"> 
+    <div class= "left-container">
+      <div class="title"><span>登录</span></div>
+      <div class="input-container">
+        <input type="text" name="username" placeholder="用户名">
+        <input type= "password" name= "password" placeholder="密码">
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="regist-container">
+        <a href="enrol.html">注册&nbsp;</a>
+      </div>
+      <div class= "action-container">
+        <span>提交</span>
+      </div>
+    </div>
+  </div>
+</body>
+<html>
+    <script>
+        function chack(name) {
+            if (name == "") {
+                document.getElementById("name").style.color = "red"
+                document.getElementById("name").innerHTML = "用户名不能为空"
+            } else if (name.length < 4) {
+                document.getElementById("name").style.color = "red"
+                document.getElementById("name").innerHTML = "用户名长度至少为4"
+            } else {
+                document.getElementById("name").style.color = "green"
+                document.getElementById("name").innerHTML = "✔"
+            }
+        }
+    </script>

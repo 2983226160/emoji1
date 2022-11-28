@@ -1,0 +1,33 @@
+.main {
+    width: 1334px;
+    height: 610px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.emoji_examples {
+    float: left;
+    width: 326px;
+    border: solid 2px #d1cbcb;
+    height: 285px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.emoji_examples h1
+{
+    height: 50px;
+    margin: 5px;
+    font-size: 30px;
+    text-align: center;
+}
+.emoji_examples ._examples a{
+    float: left;
+    display: inline-block;
+    font-size: 1.5rem;
+    min-width: 1.5rem;
+    padding: 10px 5px;
+    background: #eee;
+}
+.emoji_examples ._examples a h6{
+    display: block;
+    font-size: 1px;
+}

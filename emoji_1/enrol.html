@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+    <script>
+        function chack(i) {
+            var name = document.getElementsByName("user_name")[0].value
+            var Password = document.getElementsByName("pass_word")[0].value
+            var Passag = document.getElementsByName("passwordag")[0].value
+            switch (i) {
+                case 1:
+                    chack1(name);
+                    break;
+                case 2:
+                    chack2(Password);
+                    break;
+                case 3:
+                    chack3(Password, Passag);
+                    break;
+                case 4:
+                    chack4(name, Passag, Password);
+            }
+        }
+ 
+        function chack1(name) {
+ 
+            if (name == "") {
+                document.getElementById("name1").style.color = "red"
+                document.getElementById("name1").innerHTML = "用户名不能为空"
+            } else if (name.length < 4) {
+                document.getElementById("name1").style.color = "red"
+                document.getElementById("name1").innerHTML = "用户名长度至少为4"
+            } else {
+                document.getElementById("name1").style.color = "green"
+                document.getElementById("name1").innerHTML = "✔"
+            }
+ 
+        }
+ 
+        function chack2(Password) {
+ 
+            if (Password == "") {
+                document.getElementById("password").style.color = "red"
+                document.getElementById("password").innerHTML = "密码不能为空"
+            } else if (Password.length < 6) {
+                document.getElementById("password").style.color = "red"
+                document.getElementById("password").innerHTML = "密码长度至少为6"
+            } else {
+                document.getElementById("password").style.color = "green"
+                document.getElementById("password").innerHTML = "✔"
+            }
+        }
+ 
+        function chack3(Password, Passag) {
+ 
+            if (!Password) {
+                document.getElementById("passag").style.color = "red"
+                document.getElementById("passag").innerHTML = "密码框未填"
+            } else if (Password != Passag) {
+                document.getElementById("passag").style.color = "red"
+                document.getElementById("passag").innerHTML = "两次密码不一致"
+            } else {
+                document.getElementById("passag").style.color = "green"
+                document.getElementById("passag").innerHTML = "✔"
+            }
+ 
+        }
+ 
+        function chack4(name, Passag, Password) {
+            if (name.length > 3 && Password.length > 5 && Password == Passag) {
+                alert("注册信息已经提交")
+            } else {
+                alert("您还有信息未填写正确")
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-image: url("https://tse1-mm.cn.bing.net/th/id/R-C.605ffb26bfbf90ca7f734a57b73b4ae8?rik=QqzTvuzrqYBS0w&riu=http%3a%2f%2fimg.zcool.cn%2fcommunity%2f012b1956415d5632f87512f654ddf6.jpg&ehk=Q5Qaf%2bPVpNShw3VeTB0hiy%2bCI5TbTmNMs2NCDnC6jVs%3d&risl=&pid=ImgRaw&r=0");
+            margin-bottom: 5%;
+            font-size: 14px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        span {
+            font-size: 10px;
+        }
+        
+        .tables {
+            width: 40%;
+            height: 160px;
+            margin: auto;
+            margin-top: 10%;
+        }
+        
+        table {
+            border-collapse: separate;
+            border-spacing: 10px;
+            padding-top: 2%;
+            margin-left: 20%;
+        }
+        
+        input {
+            border: 1px solid;
+            border-radius: 10px;
+        }
+        
+        tr {
+            margin-top: 20px;
+        }
+        
+        .put {
+            border: 1px solid;
+            border-radius: 5px;
+        }
+        
+        .put:hover {
+            border: 2px;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+ 
+<body>
+ 
+    <div class="tables">
+        <table>
+            <tr>
+                <td>
+                    用户名：
+                </td>
+                <td><input type="text" name="user_name" onblur="chack(1)"></td>
+                <td class="d1"><span id="name1">请输入至少4位用户名</span></td>
+            </tr>
+            <tr>
+                <td>
+                    密码：
+                </td>
+                <td><input type="password" name="pass_word" onblur="chack(2)"> </td>
+                <td class="d1"><span id="password"> 请至少输入6位密码</span></td>
+            </tr>
+            <tr>
+                <td>
+                    确认密码：
+                </td>
+                <td><input type="password" name="passwordag" onblur="chack(3)"></td>
+                <td class="d1"><span id="passag">请再次输入密码</span></td>
+            </tr>
+            <tr align=center>
+                <td></td>
+                <td>
+                    <input type="submit" value="提交" onclick="chack(4)" class="put">
+                </td>
+            </tr>
+        </table>
+    </div>
+ 
+</body>
+ 
+</html>

@@ -1,0 +1,45 @@
+
+.emotion_display{
+    width: 1200px;
+    height: 100%px;
+
+    background-color: rgb(255, 255, 255);
+}
+.yellow_display{
+    width: 100%;
+    height: 600px;
+}
+.other_display{
+    width: 100%;
+    height: 400px;
+}
+.emotion_display h1{
+    text-align: center;
+}
+.emotion_display{
+    padding-top: 20px;
+}
+.yellow_display ul li{
+    float: left;
+    font-size: 2rem;
+    min-width: 3rem;
+    padding: 10px 10px;
+    background: rgb(255, 255, 255);
+}
+._examples a h6{
+    display: block;
+    font-size: 1px;
+}
+.other_display ul li{
+    float: left;
+    display: inline-block;
+    font-size: 2rem;
+    min-width: 3rem;
+    padding: 10px 10px;
+    background: rgb(255, 255, 255);
+}
+._examples a h6{
+    display: block;
+    font-size: 1px;
+}
+

@@ -1,0 +1,104 @@
+.round-border {
+    border: 1px solid #000;
+    border-radius: 1.2rem;
+    width: 3.8rem;
+    height: 3.8rem;
+    line-height: 3.8rem;
+    text-align: center;
+    display: inline-block;
+    font-weight: 200;
+    background: orange;
+    margin-left: 5px;
+}
+
+.left-nav .item a:hover {
+    color: #c81623;
+}
+
+.left-nav .item:hover {
+    background-color: #d9d9d9;
+}
+
+.left-nav .item a {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+.left-nav .item {
+    height: 25px;
+    line-height: 25px;
+    padding-left: 18px;
+    font-size: 12px;
+}
+
+.left-nav {
+    width: 70px;
+    height: 150px;
+    padding: 10px 0;
+    background-color: #FFF;
+    float: left;
+    margin-top: 10px;
+}
+
+.left-nav .item {
+    height: 25px;
+    line-height: 25px;
+    padding-left: 18px;
+    font-size: 12px;
+}
+
+.left-nav .item a {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+.navbar-brand {
+    width: 220px;
+    height: 70px;
+}
+
+.navbar-start {
+    width: 500px;
+    height: 70px;
+}
+
+th,
+td {
+    padding: 15px;
+}
+
+.box1 {
+    width: 1250px;
+    height: 150px;
+    float: left;
+    margin-left: 70px;
+    margin-right: 100px;
+}
+
+.address {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: -100px;
+}
+
+.part {
+    padding-top: 40px;
+    text-align: center;
+    margin-right: 0px;
+    margin-left: 50px;
+    width: 200px;
+    height: 270px;
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    font-size: 30px;
+    border-radius: 5%;
+}
+
+.part:hover {
+    width: 210px;
+    height: 280px;
+}
